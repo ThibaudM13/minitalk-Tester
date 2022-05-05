@@ -9,11 +9,9 @@ git clone https://github.com/ThibaudM13/minitalk-Tester.git
 ```sh
 # Edit the value of PATH_TO_CLIENT with your own client's path
 
-# Execution
+# Execution (By default the script launch the speed test on 1000 char)
 
 ./tester.sh <your server PID> [options]
-
-***NB:** By default the script launch the speed test on 1000 char*
 
 Options:
   -m      Mandatory part
