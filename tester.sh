@@ -144,9 +144,9 @@ fi
 ### Test 4 ###
 if [[ $t4 == 1 || $tm == 1 ]]
 then
-    echo "${L_Green} [Test 4]\tSending str with 3 800 char (10 times) ${NC}"
+    echo "${L_Green} [Test 4]\tTrying to crash your connexion Server-Client, sending str with 5 400 char (10 times) ${NC}"
 
-    for i in 1 2 3 4 5 6 7 8 9 10
+    for i in {1..10}
     do
         echo -n "${Green}[ ${i} ]${NC} "
         $PATH_TO_CLIENT $p_id "
@@ -211,7 +211,7 @@ if [[ $t5 == 1 || $tb == 1 ]]
 then
     echo "${L_Green}[Test 5]\tGuess the movie with emojis ${NC}"
 
-    $PATH_TO_CLIENT $p_id"
+    $PATH_TO_CLIENT $p_id "
      ⛴️  +  🌊  + 💥 = ❓
      👦 +  👽  + 🚲 = ❓
      🏰 +  ❄️   + 👭 = ❓
@@ -221,11 +221,11 @@ fi
 ### Test 6 ###
 if [[ $t6 == 1 || $tb == 1 ]]
 then
-    echo "${L_Green}[Test 6]\tSending str with 1 000 char (10 times)${NC}"
-    for i in 1 2 3 4 5 6 7 8 9 10
+    echo "${L_Green}[Test 6]\tTesting the connexion between server-client, sending str with 5 300 char (10 times)${NC}"
+    for i in {1..10}
     do
         echo -n "${L_Green}[ ${i} ]${NC} "
-        $PATH_TO_CLIENT $p_id"
+        $PATH_TO_CLIENT $p_id "
         ░░░░░░░░░░░░░░░░░░░▒▓▓█████████████▓▓▒░░░░░░░░░░░░░░░░░░░░░░
         ░░░░░░░░░░░░░░▒████▓▓▒▒░▒▒▒░▒▒▒▒▒▒▓▓████▓▒░░░░░░░░░░░░░░░░░░
         ░░░░░░░░░░░▒███▓░░░░░░░░░░░░░░░░░░░░░░▒███████▓▓▒░░░░░░░░░░░
