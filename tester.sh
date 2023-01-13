@@ -359,4 +359,4 @@ then
     done
 fi
 
-echo "\nIf all was corrrectly display on your server terminal: Perfect, googd job! 💪"
+echo "\nIf all was corrrectly display on your server terminal: Perfect, well done! 💪"
